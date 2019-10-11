@@ -1,0 +1,86 @@
+.logo {
+  height: 5rem;
+  width: 5rem;
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.logo g {
+  fill: var(--logo-color);
+}
+
+.tile {
+  background-image: var(--image);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.animated {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.animated a {
+  border-radius: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  width: 20vw;
+  height: 20vw;
+}
+
+.animated a:hover {
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.25);
+  z-index: 1000;
+}
+
+.shine {
+  position: relative;
+}
+
+.shine::after {
+  content: '';
+  width: 60px;
+  height: calc(22vw + 50px);
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: skew(-0.08turn, 30deg);
+  position: absolute;
+  top: -20px;
+}
+
+.moto1 {
+  background-image: url(./images/sm/moto1.jpg);
+}
+.moto2 {
+  background-image: url(./images/sm/moto2.jpg);
+}
+.moto3 {
+  background-image: url(./images/sm/moto3.jpg);
+}
+.moto4 {
+  background-image: url(./images/sm/moto4.jpg);
+}
+.moto5 {
+  background-image: url(./images/sm/moto5.jpg);
+}
+.moto6 {
+  background-image: url(./images/sm/moto6.jpg);
+}
+.moto7 {
+  background-image: url(./images/sm/moto7.jpg);
+}
+.moto8 {
+  background-image: url(./images/sm/moto9.jpg);
+}
+
+@media (width: 480px) {
+  .animated a {
+    width: 22vw;
+    height: 22vw;
+  }
+}

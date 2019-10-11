@@ -1,0 +1,49 @@
+.logo {
+  height: 5rem;
+  pointer-events: none;
+}
+
+.logo g {
+  fill: var(--logo-color);
+}
+
+.animated {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.animated ul,
+.animated li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.animated ul {
+  position: relative;
+  display: flex;
+  width: 300px;
+  flex-wrap: wrap;
+}
+
+.animated li {
+  border-radius: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  width: 140px;
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  background: #fff;
+}

@@ -1,0 +1,36 @@
+{
+  "name": "chunky",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "framer-motion": "^1.6.8",
+    "lodash-es": "^4.17.15",
+    "react": "^16.10.2",
+    "react-burger-menu": "^2.6.11",
+    "react-dom": "^16.10.2",
+    "react-lazy-named": "^1.0.0",
+    "react-lorem-ipsum": "^1.4.3",
+    "react-scripts": "3.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

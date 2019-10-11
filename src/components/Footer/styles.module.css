@@ -1,0 +1,10 @@
+.foot {
+  background: #030003;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.foot a {
+  color: inherit;
+  font-weight: bold;
+}

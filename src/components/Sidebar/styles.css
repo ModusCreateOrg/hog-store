@@ -1,0 +1,111 @@
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: absolute;
+  width: 20px;
+  height: 18px;
+  right: 14px;
+  top: 14px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: #fff;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: var(--color-primary);
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: var(--color-background);
+  font-family: var(--font-primary);
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+.bm-menu ul {
+  list-style: none;
+  padding: 0;
+  user-select: none;
+}
+
+.bm-menu a {
+  color: inherit;
+  width: 100%;
+  padding-left: 1rem;
+}
+
+.bm-menu li {
+  border-radius: 5px;
+  height: 40px;
+  width: 100%;
+  opacity: 0;
+  margin-bottom: 10px;
+  transform-origin-y: 0%;
+  color: white;
+  display: flex !important;
+  align-items: center;
+}
+
+.bm-menu li:nth-child(1) {
+  background: #f69a9a;
+}
+
+.bm-menu li:nth-child(2) {
+  background: #83ae9b;
+}
+
+.bm-menu li:nth-child(3) {
+  background: #43415f;
+}
+
+.bm-menu li:nth-child(4) {
+  background: #ef4566;
+}
+
+.bm-menu li:nth-child(5) {
+  background: #f9cdae;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
