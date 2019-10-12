@@ -30,7 +30,7 @@ function Products() {
 
   return (
     <section>
-      <h2>Pick your next Hog ide</h2>
+      <h2>Pick your next Hog ride</h2>
       <div className={s.animated}>
         {colors.map(([background, fill], idx) => (
           <motion.a
