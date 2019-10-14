@@ -1,6 +1,7 @@
 import React, { Suspense } from 'react';
 import lazy from 'react-lazy-named';
 
+// this is ugly
 // const Div = lazy(() =>
 //   import(
 //     'framer-motion' /* webpackChunkName: "framer", webpackPreload: true */
