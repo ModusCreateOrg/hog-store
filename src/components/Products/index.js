@@ -1,7 +1,7 @@
 // @ts-nocheck
 import React, { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
 import { shuffle } from 'lodash-es';
+import { AnimatedA, AnimatedDiv } from '../Animated';
 import {
   delay,
   spring,
@@ -33,22 +33,22 @@ function Products() {
       <h2>Pick your next Hog ride</h2>
       <div className={s.animated}>
         {colors.map(([background, fill], idx) => (
-          <motion.a
+          <AnimatedA
             whileHover={{ scale: 1.2 }}
             key={background}
             layoutTransition={spring}
             className={`${s.tile} ${s[`moto${idx + 1}`]}`}
             style={{ backgroundColor: background, '--logo-color': fill }}
           >
-            <motion.div
+            <AnimatedDiv
               animate={logoAnimation}
               className={s.shine}
               transition={{
                 ...logoTransition,
                 delay: Math.random() * 3 * delay,
               }}
-            ></motion.div>
-          </motion.a>
+            ></AnimatedDiv>
+          </AnimatedA>
         ))}
       </div>
     </section>

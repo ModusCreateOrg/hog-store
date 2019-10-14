@@ -1,7 +1,7 @@
 // @ts-nocheck
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
 import { push as Menu } from 'react-burger-menu';
+import { AnimatedUl, AnimatedLi } from '../Animated';
 
 import './styles.css';
 
@@ -33,28 +33,28 @@ const Hero = () => {
       onStateChange={({ isOpen }) => setTimeout(() => setOpen(isOpen), 50)}
     >
       {open ? (
-        <motion.ul initial="hidden" animate="visible" variants={list}>
-          <motion.li variants={items}>
+        <AnimatedUl initial="hidden" animate="visible" variants={list}>
+          <AnimatedLi variants={items}>
             <a className="menu-item" href="/">
               Home
             </a>
-          </motion.li>
-          <motion.li variants={items}>
+          </AnimatedLi>
+          <AnimatedLi variants={items}>
             <a className="menu-item" href="/">
               My Hog
             </a>
-          </motion.li>
-          <motion.li variants={items}>
+          </AnimatedLi>
+          <AnimatedLi variants={items}>
             <a className="menu-item" href="/">
               Cart
             </a>
-          </motion.li>
-          <motion.li variants={items}>
+          </AnimatedLi>
+          <AnimatedLi variants={items}>
             <a className="menu-item" href="/">
               Contact
             </a>
-          </motion.li>
-        </motion.ul>
+          </AnimatedLi>
+        </AnimatedUl>
       ) : (
         false
       )}
