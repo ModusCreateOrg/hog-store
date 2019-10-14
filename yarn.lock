@@ -6044,6 +6044,11 @@ lodash._reinterpolate@^3.0.0:
   resolved "https://registry.yarnpkg.com/lodash._reinterpolate/-/lodash._reinterpolate-3.0.0.tgz#0ccf2d89166af03b3663c796538b75ac6e114d9d"
   integrity sha1-DM8tiRZq8Ds2Y8eWU4t1rG4RTZ0=
 
+lodash.get@^4.4.2:
+  version "4.4.2"
+  resolved "https://registry.yarnpkg.com/lodash.get/-/lodash.get-4.4.2.tgz#2d177f652fa31e939b4438d5341499dfa3825e99"
+  integrity sha1-LRd/ZS+jHpObRDjVNBSZ36OCXpk=
+
 lodash.memoize@^4.1.2:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/lodash.memoize/-/lodash.memoize-4.1.2.tgz#bcc6c49a42a2840ed997f323eada5ecd182e0bfe"
@@ -8189,10 +8194,12 @@ react-is@^16.8.1, react-is@^16.8.4:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.10.2.tgz#984120fd4d16800e9a738208ab1fba422d23b5ab"
   integrity sha512-INBT1QEgtcCCgvccr5/86CfD71fw9EPmDxgiJX4I2Ddr6ZsV6iFXsuby+qWJPtmNuMY0zByTsG4468P7nHuNWA==
 
-react-lazy-named@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/react-lazy-named/-/react-lazy-named-1.0.0.tgz#18264c847e85cfd88d2d2f55862331c321897d3c"
-  integrity sha512-uQYGX8eDpoxmsIW5cm+yh2/6lP0MCmYyGiE8Ti0RU9NGyOl46pmixDVhQdJGUbpqMe1kqWGWbs0nog9U5ag9ng==
+react-lazy-named@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/react-lazy-named/-/react-lazy-named-1.1.1.tgz#84d9813d7645754dbbdd7bff2e9dd2c6b7fc02d9"
+  integrity sha512-6qUKD8lmoH7gy5Ws0Cc9Jq6aE5SsZN+1npxo3jgmzJbK9Q64n5us7ZS9ZHrCBC6rnbrwae0FV1gnL+NlOTURkw==
+  dependencies:
+    lodash.get "^4.4.2"
 
 react-lorem-ipsum@^1.4.3:
   version "1.4.3"
