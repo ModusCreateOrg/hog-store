@@ -1,0 +1,38 @@
+audits:
+  - size
+  - lighthouse
+  - axe
+
+outputs:
+  cli:
+    onlyFailures: true
+
+configs:
+  buildDir: build
+
+  size:
+    - path: ./build/static/js/*.chunk.js
+      maxSize: 350 KB
+    - path: ./build/static/js/runtime*.js
+      maxSize: 10 KB
+    - path: ./build/index.html
+      maxSize: 10 KB
+    - path: ./build/
+      maxSize: 5 MB
+
+  lighthouse:
+    outputHtml: artifacts/lighthouse.html
+    skipAudits:
+      - uses-text-compression
+      - uses-http2
+      - redirects-http
+      - uses-long-cache-ttl
+    threshold:
+      accessibility: 94
+      "best-practices": 100
+      performance: 95
+      pwa: 100
+      seo: 100
+
+plugins:
+  - plugin: "@modus/gimbal-plugin-axe"
