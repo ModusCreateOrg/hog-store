@@ -1,9 +1,9 @@
 // @ts-nocheck
-import React from 'react';
-import s from './styles.module.css';
+import React from "react";
+import s from "./styles.module.css";
 
 const Hero = () => (
-  <nav className={s.navigation}>
+  <nav aria-label="Main navigation" className={s.navigation}>
     <ol>
       <li>
         <a href="/">Motoshop</a> - subscription motorcycles

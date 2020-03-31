@@ -44,7 +44,7 @@
 }
 
 .shine::after {
-  content: '';
+  content: "";
   width: 60px;
   height: calc(22vw + 50px);
   background-color: rgba(255, 255, 255, 0.3);
@@ -54,28 +54,28 @@
 }
 
 .moto1 {
-  background-image: url(./images/sm/moto1.jpg);
+  background-image: url(./images/sm/moto1.webp);
 }
 .moto2 {
-  background-image: url(./images/sm/moto2.jpg);
+  background-image: url(./images/sm/moto2.webp);
 }
 .moto3 {
-  background-image: url(./images/sm/moto3.jpg);
+  background-image: url(./images/sm/moto3.webp);
 }
 .moto4 {
-  background-image: url(./images/sm/moto4.jpg);
+  background-image: url(./images/sm/moto4.webp);
 }
 .moto5 {
-  background-image: url(./images/sm/moto5.jpg);
+  background-image: url(./images/sm/moto5.webp);
 }
 .moto6 {
-  background-image: url(./images/sm/moto6.jpg);
+  background-image: url(./images/sm/moto6.webp);
 }
 .moto7 {
-  background-image: url(./images/sm/moto7.jpg);
+  background-image: url(./images/sm/moto7.webp);
 }
 .moto8 {
-  background-image: url(./images/sm/moto9.jpg);
+  background-image: url(./images/sm/moto9.webp);
 }
 
 @media (width: 480px) {

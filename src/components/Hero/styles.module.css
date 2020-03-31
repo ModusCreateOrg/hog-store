@@ -1,7 +1,7 @@
 .hero {
   display: flex;
   align-content: center;
-  background-image: url(./motorcycle-sm.jpg);
+  background-image: url(./motorcycle-sm.webp);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -12,13 +12,13 @@
 }
 
 .hero::before {
-  content: '';
+  content: "";
   display: block;
   padding-bottom: calc(100% / (3 / 2));
 }
 
 .hero h1,
-.hero h3 {
+.hero h2 {
   margin: 0;
 }
 
@@ -89,7 +89,7 @@
 
 @media (min-width: 800px) {
   .hero {
-    background-image: url(./motorcycle-lg.jpg);
+    background-image: url(./motorcycle-lg.webp);
   }
 
   .content {

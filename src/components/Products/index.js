@@ -1,24 +1,24 @@
 // @ts-nocheck
-import React, { useState, useEffect } from 'react';
-import { shuffle } from 'lodash-es';
-import { AnimatedA, AnimatedDiv } from '../Animated';
+import React, { useState, useEffect } from "react";
+import { shuffle } from "lodash-es";
+import { AnimatedA, AnimatedDiv } from "../Animated";
 import {
   delay,
   spring,
   logoAnimation,
-  logoTransition,
-} from './animation.config';
-import s from './styles.module.css';
+  logoTransition
+} from "./animation.config";
+import s from "./styles.module.css";
 
 const initialColors = [
-  ['#FF008C', '#FFF0FC'],
-  ['#D309E1', '#A3F9A1'],
-  ['#9C1AFF', '#F1FA0F'],
-  ['#7700FF', '#77E0FF'],
-  ['#FF008D', '#F1FA0F'],
-  ['#D309E2', '#FFF0FC'],
-  ['#9C1AFC', '#F1FA0F'],
-  ['#7700FC', '#77E0FF'],
+  ["#FF008C", "#FFF0FC"],
+  ["#D309E1", "#A3F9A1"],
+  ["#9C1AFF", "#F1FA0F"],
+  ["#7700FF", "#77E0FF"],
+  ["#FF008D", "#F1FA0F"],
+  ["#D309E2", "#FFF0FC"],
+  ["#9C1AFC", "#F1FA0F"],
+  ["#7700FC", "#77E0FF"]
 ];
 
 function Products() {
@@ -30,7 +30,7 @@ function Products() {
 
   return (
     <section>
-      <h2>Pick your next Hog ride</h2>
+      <h3>Pick your next Hog ride</h3>
       <div className={s.animated}>
         {colors.map(([background, fill], idx) => (
           <AnimatedA
@@ -38,14 +38,14 @@ function Products() {
             key={background}
             layoutTransition={spring}
             className={`${s.tile} ${s[`moto${idx + 1}`]}`}
-            style={{ backgroundColor: background, '--logo-color': fill }}
+            style={{ backgroundColor: background, "--logo-color": fill }}
           >
             <AnimatedDiv
               animate={logoAnimation}
               className={s.shine}
               transition={{
                 ...logoTransition,
-                delay: Math.random() * 3 * delay,
+                delay: Math.random() * 3 * delay
               }}
             ></AnimatedDiv>
           </AnimatedA>
