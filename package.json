@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "framer-motion": "^1.6.8",
-    "lodash-es": "^4.17.15",
+    "lodash-es": "^4.17.21",
     "react": "^16.10.2",
     "react-burger-menu": "^2.6.11",
     "react-dom": "^16.10.2",
